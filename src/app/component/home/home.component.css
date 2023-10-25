@@ -1,0 +1,13 @@
+.tableContainer {
+  width: 85%;
+  margin: auto;
+}
+
+.filter {
+  margin-left: 7.5%;
+  margin-top: 10px
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
