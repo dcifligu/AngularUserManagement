@@ -25,8 +25,6 @@ import {MatCardModule} from '@angular/material/card';
 import { DetailsComponent } from './component/details/details.component';
 import { AddUserComponent } from './component/add-user/add-user.component';
 import { DeleteConfirmationComponent } from './component/delete-confirmation/delete-confirmation.component';
-import { AddUserDialogComponent } from './component/add-user-dialog/add-user-dialog.component';
-import { DetailsDialogComponent } from './component/details-dialog/details-dialog.component';
 
 @NgModule({
   declarations: [
@@ -38,8 +36,6 @@ import { DetailsDialogComponent } from './component/details-dialog/details-dialo
     DetailsComponent,
     AddUserComponent,
     DeleteConfirmationComponent,
-    AddUserDialogComponent,
-    DetailsDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -60,6 +56,7 @@ import { DetailsDialogComponent } from './component/details-dialog/details-dialo
     MatSortModule,
     MatSnackBarModule,
     MatCardModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

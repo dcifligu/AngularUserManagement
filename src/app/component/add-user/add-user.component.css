@@ -1,0 +1,21 @@
+.card {
+  width: fit-content;
+  margin: 10% auto;
+  flex: 1 1 auto;
+}
+
+.form-inputs {
+  margin: 10px 10px 0px 0px;
+}
+
+.title {
+  width: fit-content;
+  margin: 5px auto;
+}
+
+
+.form-inputs>button {
+  width: fit-content;
+  padding: 2px;
+  margin: 5px auto;
+}

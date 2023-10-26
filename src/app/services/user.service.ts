@@ -24,8 +24,8 @@ export class UserService {
   updateUser(id: number, data: any): Observable<any> {
     return this._http.put(`http://localhost:3000/users/${id}`, data);
   }
-  
-  getUserDetails(id: number): Observable<any> {
+
+  getUserById(id: number): Observable<any> {
     return this._http.get(`http://localhost:3000/users/${id}`);
   }
 

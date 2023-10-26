@@ -10,6 +10,58 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
+## Install Angular Material and Angular CDK:
+
+1. Add angular Material to your project
+   `ng add @angular/material`
+
+2. Import Angular Material Modules:
+
+Open your src/app/app.module.ts file and import the necessary Angular Material modules. You can import modules for components you plan to use, such as MatButtonModule, MatInputModule, MatCardModule, etc. Here's an example of how to import a few common modules:
+
+```
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+```
+
+## Backend Setup with JSON Server
+
+This project uses a simple JSON-based backend powered by [JSON Server](https://github.com/typicode/json-server). To set up the backend, follow these steps:
+
+1. Install JSON Server globally if you haven't already:
+
+   `npm install -g json-server`
+
+2. Create a db.json file in the root of your project directory. This file will serve as your database.
+
+```
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "phone": "1234567890",
+      "email": "john@example.com"
+    },
+    {
+      "id": 2,
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "phone": "9876543210",
+      "email": "jane@example.com"
+    }
+    // Add more user data as needed
+  ]
+}
+```
+
+3.Start the JSON Server with the db.json file:
+
+`json-server --watch db.json`
+
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.

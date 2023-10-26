@@ -1,8 +1,44 @@
 <!--User ADD form-->
-<mat-toolbar color="primary">
-  <span>Add User</span>
+<mat-toolbar color="primary" class="toolbar">
+  <span>Add User </span>
   <span class="spacer">
   </span>
 </mat-toolbar>
+<mat-card class="card">
+  <mat-card-header>
+    <mat-card-title> Add User Data </mat-card-title>
+  </mat-card-header>
+  <form [formGroup]="userForm" (ngSubmit)="onFormSubmit()">
+    <mat-card-content class="content">
+      <div class="row">
+        <mat-form-field appearance="outline">
+          <mat-label color="primary">First Name</mat-label>
+          <input matInput type="text" placeholder="Ex. Deivid" formControlName="firstName">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label color="primary">Last Name</mat-label>
+          <input matInput type="text" placeholder="Ex. Cifligu" formControlName="lastName">
+        </mat-form-field>
+      </div>
+      <div class="row">
+        <mat-form-field appearance="outline">
+          <mat-label color="primary">Phone Nr.</mat-label>
+          <input matInput type="tel" placeholder="+355690000000" formControlName="phone">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label color="primary">Email</mat-label>
+          <input matInput type="email" placeholder="name@mail.com" formControlName="email">
+        </mat-form-field>
+      </div>
+    </mat-card-content>
+
+    <mat-card-actions class="action">
+      <button mat-raised-button class="modalButton" (click)="returnHome()">Cancle</button>
+      <button mat-raised-button color="primary" type="submit" class="modalButton">Save</button>
+    </mat-card-actions>
+  </form>
+</mat-card>
+
+
 
 <router-outlet></router-outlet>

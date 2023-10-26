@@ -22,11 +22,11 @@ export class HomeComponent implements OnInit{
 
 constructor(private _dialog: MatDialog, private _userService: UserService, private _coreService: CoreService, private router: Router){}
 
-ngOnInit() {
+  ngOnInit() {
   this.getUserList();
-}
+  }
 
-getUserList(){
+  getUserList(){
       this._userService.getUserList().subscribe({
         next: (res) =>{
           this.dataSource = new MatTableDataSource(res);
@@ -54,15 +54,7 @@ getUserList(){
   }
 
 detailUser(id: number, firstName: string, lastName: string, phone: string, email: string) {
-  this.router.navigate(['details'], {
-    queryParams: {
-      id,
-      firstName,
-      lastName,
-      phone,
-      email,
-    },
-  });
+  this.router.navigate(['details', id]); // Navigate to the details route with the user's ID
 }
 
   deleteUser(id: number) {
