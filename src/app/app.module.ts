@@ -11,7 +11,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDialogModule } from '@angular/material/dialog';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule, MatIconButton} from '@angular/material/button';
-import { LoginDialogComponent } from './component/login-dialog/login-dialog.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
@@ -32,7 +31,6 @@ import { DeleteConfirmationComponent } from './component/delete-confirmation/del
     LoginComponent,
     HomeComponent,
     NotFoundComponent,
-    LoginDialogComponent,
     DetailsComponent,
     AddUserComponent,
     DeleteConfirmationComponent,
